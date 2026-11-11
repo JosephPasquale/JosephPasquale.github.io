@@ -4,95 +4,203 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Политика конфиденциальности — Чудо-фабрика игрушек / Privacy Policy — Wonder Toy Factory</title>
+<meta name="description" content="Политика конфиденциальности игры «Чудо-фабрика игрушек» / Privacy Policy of Wonder Toy Factory">
+<link rel="icon" href="../assets/icon.png">
 <style>
-  body { margin: 0; background: #f6ecdc; color: #3b2414; font: 17px/1.6 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
-  header { background: #5a3218; color: #ffe7b0; padding: 20px; text-align: center; }
-  header a { color: #ffd54a; margin: 0 10px; font-weight: 600; }
-  h1 { font-size: 26px; margin: 8px 0 4px; }
-  h2 { font-size: 19px; margin-top: 28px; color: #74421f; }
-  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
-  th, td { border: 1px solid #d9b98f; padding: 8px; text-align: left; vertical-align: top; }
-  th { background: #f0dcbc; }
-  .muted { color: #8a6a4a; font-size: 14px; }
-  hr { border: 0; border-top: 2px solid #d9b98f; margin: 48px 0; }
+  @font-face { font-family: Nunito; font-weight: 800; src: url(../assets/Nunito-ExtraBold.woff2) format("woff2"); font-display: swap; }
+  @font-face { font-family: Nunito; font-weight: 900; src: url(../assets/Nunito-Black.woff2) format("woff2"); font-display: swap; }
+  :root { --wood: #5a3218; --wood2: #8a5226; --ink: #3b2414; --muted: #8a6a4a; --paper: #fff8ec; --line: #e6cfa8; --gold: #f5ae32; }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--ink); font: 17px/1.65 -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+         background: #f3e4cb repeating-linear-gradient(90deg, rgba(122,70,30,.035) 0 2px, transparent 2px 90px); }
+  .hero { position: relative; text-align: center; padding: 28px 16px 70px; color: #ffe7b0;
+          background: radial-gradient(ellipse at 50% 0%, #4b3a8c 0%, #2b2357 55%, #1d1838 100%); overflow: hidden; }
+  .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 46px;
+                 background: var(--wood); clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%); }
+  .stars { position: absolute; inset: 0; background-image:
+           radial-gradient(2px 2px at 12% 22%, #fff8 50%, transparent 51%), radial-gradient(2px 2px at 78% 14%, #fff9 50%, transparent 51%),
+           radial-gradient(1.5px 1.5px at 35% 60%, #fff6 50%, transparent 51%), radial-gradient(2px 2px at 88% 52%, #fff7 50%, transparent 51%),
+           radial-gradient(1.5px 1.5px at 58% 30%, #fff8 50%, transparent 51%), radial-gradient(2px 2px at 22% 78%, #fff5 50%, transparent 51%); }
+  .hero img.logo { position: relative; width: min(440px, 88vw); height: auto; filter: drop-shadow(0 8px 14px rgba(0,0,0,.35)); }
+  .hero h1 { position: relative; font: 900 clamp(22px, 5vw, 30px)/1.2 Nunito, sans-serif; margin: 6px 0 4px; color: #fff3d6;
+             text-shadow: 0 3px 0 #63351f, 0 6px 12px rgba(0,0,0,.35); }
+  .hero .date { position: relative; font: 800 15px Nunito, sans-serif; color: #e9cf9c; }
+  .tabs { position: relative; display: inline-flex; gap: 6px; margin-top: 16px; padding: 5px; border-radius: 999px;
+          background: rgba(0,0,0,.25); }
+  .tabs a { font: 900 16px Nunito, sans-serif; text-decoration: none; color: #ffe7b0; padding: 7px 18px; border-radius: 999px; }
+  .tabs a.on { background: linear-gradient(#ffd56a, var(--gold)); color: #5a3218; box-shadow: inset 0 -3px 0 #c97f12; }
+  .bar { background: var(--wood); height: 14px; }
+  main { max-width: 780px; margin: -4px auto 0; padding: 0 16px 56px; }
+  .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 24px 0 8px; }
+  .chip { background: var(--paper); border: 3px solid var(--line); border-radius: 18px; padding: 14px 14px 12px;
+          box-shadow: 0 4px 0 #d9b98f; text-align: center; }
+  .chip b { display: block; font: 900 30px/1 Nunito, sans-serif; margin-bottom: 6px; }
+  .chip span { font: 800 15px/1.35 Nunito, sans-serif; }
+  .card { position: relative; background: var(--paper); border: 4px solid #c98b4f; border-radius: 22px; padding: 22px 24px 18px;
+          margin: 22px 0; box-shadow: 0 6px 0 #8a5226, 0 12px 24px rgba(90,50,24,.18); }
+  .card::before, .card::after { content: ""; position: absolute; top: 12px; width: 12px; height: 12px; border-radius: 50%;
+          background: radial-gradient(circle at 35% 35%, #ffe08a, #b07418); }
+  .card::before { left: 12px; } .card::after { right: 12px; }
+  h2 { font: 900 21px/1.25 Nunito, sans-serif; margin: 0 0 10px; color: #74421f; display: flex; gap: 10px; align-items: center; }
+  h2 i { font-style: normal; font-size: 26px; }
+  p { margin: 8px 0; }
+  a { color: #b4561c; }
+  table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 12px 0; font-size: 15px;
+          border: 2px solid var(--line); border-radius: 14px; overflow: hidden; }
+  th, td { padding: 9px 11px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  tr:last-child td { border-bottom: 0; }
+  th { background: #f6e2c0; font: 900 15px Nunito, sans-serif; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .mail { display: inline-block; margin-top: 4px; font: 900 17px Nunito, sans-serif; text-decoration: none; color: #fff;
+          background: linear-gradient(#6ccf5a, #3f9e35); padding: 9px 18px; border-radius: 14px; box-shadow: inset 0 -4px 0 #2d7a26; }
+  footer { text-align: center; padding: 26px 16px 40px; color: #e9cf9c; background: var(--wood); font: 800 14px Nunito, sans-serif; }
+  footer img { width: 56px; height: 56px; border-radius: 14px; display: block; margin: 0 auto 8px; box-shadow: 0 4px 10px rgba(0,0,0,.3); }
+  .js [data-lang]:not(.show) { display: none; }
 </style>
+<script>document.documentElement.className = "js";</script>
 </head>
 <body>
-<header>
-  <div><a href="#ru">Русский</a> · <a href="#en">English</a></div>
+
+<header class="hero">
+  <div class="stars"></div>
+  <img class="logo" data-lang="ru" src="../assets/logo_ru.webp" alt="Чудо-фабрика игрушек" width="720" height="360">
+  <img class="logo" data-lang="en" src="../assets/logo_en.webp" alt="Wonder Toy Factory" width="720" height="360">
+  <h1 data-lang="ru">Политика конфиденциальности</h1>
+  <h1 data-lang="en">Privacy Policy</h1>
+  <div class="date" data-lang="ru">Действует с 11.11.2026</div>
+  <div class="date" data-lang="en">Effective 11.11.2026</div>
+  <nav class="tabs"><a href="#ru" id="tab-ru">Русский</a><a href="#en" id="tab-en">English</a></nav>
 </header>
+<div class="bar"></div>
+
 <main>
 
-<section id="ru">
-<h1>Политика конфиденциальности игры «Чудо-фабрика игрушек»</h1>
-<p class="muted">Дата вступления в силу: 11.11.2026</p>
+<section data-lang="ru">
+  <div class="summary">
+    <div class="chip"><b>🙅</b><span>Не спрашиваем имя, телефон, почту и геолокацию</span></div>
+    <div class="chip"><b>📱</b><span>Прогресс хранится только на вашем телефоне</span></div>
+    <div class="chip"><b>✋</b><span>Статистика — только с вашего согласия</span></div>
+  </div>
 
-<h2>Кто мы</h2>
-<p>Игру «Чудо-фабрика игрушек» (далее — Игра) разрабатывает Joseph Pasquale. Связь: <a href="mailto:awelave@yandex.ru">awelave@yandex.ru</a>.</p>
+  <div class="card">
+    <h2><i>🏭</i>Кто мы</h2>
+    <p>Игру «Чудо-фабрика игрушек» (далее — Игра) разрабатывает Joseph Pasquale.</p>
+    <a class="mail" href="mailto:awelave@yandex.ru">✉ awelave@yandex.ru</a>
+  </div>
 
-<h2>Какие данные собираются</h2>
-<p>Игра <b>не просит</b> имя, телефон, e-mail, геолокацию, контакты или доступ к фото.</p>
-<p>С вашего согласия (окно при первом запуске) автоматически собирается:</p>
-<table>
-  <tr><th>Что</th><th>Зачем</th><th>Кто обрабатывает</th></tr>
-  <tr><td>Игровая статистика: пройденные уровни, результаты, использование бустеров</td><td>улучшать баланс и сложность уровней</td><td>AppMetrica (ООО «Яндекс»)</td></tr>
-  <tr><td>Технические данные: модель устройства, версия ОС, язык, обезличенный идентификатор установки</td><td>статистика, поиск ошибок</td><td>AppMetrica (ООО «Яндекс»)</td></tr>
-</table>
-<p>Прогресс игры хранится только на вашем устройстве.</p>
+  <div class="card">
+    <h2><i>📊</i>Какие данные собираются</h2>
+    <p>Игра <b>не просит</b> имя, телефон, e-mail, геолокацию, контакты или доступ к фото.</p>
+    <p>С вашего согласия (окно при первом запуске) автоматически собирается:</p>
+    <table>
+      <tr><th>Что</th><th>Зачем</th><th>Кто обрабатывает</th></tr>
+      <tr><td>Игровая статистика: пройденные уровни, результаты, использование бустеров</td><td>улучшать баланс и сложность уровней</td><td>AppMetrica (ООО «Яндекс»)</td></tr>
+      <tr><td>Технические данные: модель устройства, версия ОС, язык, обезличенный идентификатор установки</td><td>статистика, поиск ошибок</td><td>AppMetrica (ООО «Яндекс»)</td></tr>
+    </table>
+    <p>Прогресс игры хранится только на вашем устройстве.</p>
+  </div>
 
-<h2>Реклама и покупки</h2>
-<p>В будущих версиях Игра может показывать рекламу через Рекламную сеть Яндекса (в том числе персонализированную по рекламному идентификатору устройства) и предлагать покупки внутри игры. Платёжные данные (номер карты и т.п.) обрабатывает только магазин приложений — Игра их не получает. Персонализацию рекламы можно отключить в настройках устройства. Эта страница будет обновлена до включения рекламы или покупок.</p>
+  <div class="card">
+    <h2><i>💰</i>Реклама и покупки</h2>
+    <p>Сейчас в Игре нет рекламы и покупок. В будущих версиях Игра может показывать рекламу через Рекламную сеть Яндекса (в том числе персонализированную по рекламному идентификатору устройства) и предлагать покупки внутри игры. Платёжные данные (номер карты и т.п.) обрабатывает только магазин приложений — Игра их не получает. Персонализацию рекламы можно отключить в настройках устройства. Эта страница будет обновлена до включения рекламы или покупок.</p>
+  </div>
 
-<h2>Передача данных</h2>
-<p>Мы не продаём и не передаём данные третьим лицам, кроме обработчиков, указанных выше, которые действуют по своим политикам.</p>
+  <div class="card">
+    <h2><i>🔒</i>Передача данных</h2>
+    <p>Мы не продаём и не передаём данные третьим лицам, кроме обработчиков, указанных выше, которые действуют по своим политикам.</p>
+  </div>
 
-<h2>Дети</h2>
-<p>Игра не предназначена для детей младше 12 лет и намеренно не собирает их данные.</p>
+  <div class="card">
+    <h2><i>🧸</i>Дети</h2>
+    <p>Игра не предназначена для детей младше 12 лет и намеренно не собирает их данные.</p>
+  </div>
 
-<h2>Ваши права</h2>
-<p>Вы можете отозвать согласие и попросить удалить данные, написав на <a href="mailto:awelave@yandex.ru">awelave@yandex.ru</a>. Удаление Игры с устройства удаляет локальный прогресс.</p>
+  <div class="card">
+    <h2><i>✅</i>Ваши права</h2>
+    <p>Вы можете отозвать согласие и попросить удалить данные, написав на <a href="mailto:awelave@yandex.ru">awelave@yandex.ru</a>. Удаление Игры с устройства удаляет локальный прогресс.</p>
+  </div>
 
-<h2>Изменения</h2>
-<p>Мы можем обновлять политику; актуальная версия всегда по этому адресу.</p>
-<p class="muted">Политика AppMetrica: <a href="https://yandex.ru/legal/appmetrica_sdk_agreement/">yandex.ru/legal/appmetrica_sdk_agreement</a> · Рекламная сеть Яндекса: <a href="https://yandex.ru/legal/confidential/">yandex.ru/legal/confidential</a></p>
+  <div class="card">
+    <h2><i>📝</i>Изменения</h2>
+    <p>Мы можем обновлять политику; актуальная версия всегда по этому адресу.</p>
+    <p class="muted">Политика AppMetrica: <a href="https://yandex.ru/legal/appmetrica_sdk_agreement/">yandex.ru/legal/appmetrica_sdk_agreement</a> · Рекламная сеть Яндекса: <a href="https://yandex.ru/legal/confidential/">yandex.ru/legal/confidential</a></p>
+  </div>
 </section>
 
-<hr>
+<section lang="en" data-lang="en">
+  <div class="summary">
+    <div class="chip"><b>🙅</b><span>We never ask for your name, phone, e-mail or location</span></div>
+    <div class="chip"><b>📱</b><span>Your progress stays on your phone</span></div>
+    <div class="chip"><b>✋</b><span>Statistics only with your consent</span></div>
+  </div>
 
-<section id="en" lang="en">
-<h1>Privacy Policy — “Wonder Toy Factory”</h1>
-<p class="muted">Effective date: 11.11.2026</p>
+  <div class="card">
+    <h2><i>🏭</i>Who we are</h2>
+    <p>“Wonder Toy Factory” (the Game) is developed by Joseph Pasquale.</p>
+    <a class="mail" href="mailto:awelave@yandex.ru">✉ awelave@yandex.ru</a>
+  </div>
 
-<h2>Who we are</h2>
-<p>“Wonder Toy Factory” (the Game) is developed by Joseph Pasquale. Contact: <a href="mailto:awelave@yandex.ru">awelave@yandex.ru</a>.</p>
+  <div class="card">
+    <h2><i>📊</i>What we collect</h2>
+    <p>The Game does <b>not</b> ask for your name, phone number, e-mail, location, contacts or photos.</p>
+    <p>With your consent (shown on first launch), the following is collected automatically:</p>
+    <table>
+      <tr><th>What</th><th>Why</th><th>Processor</th></tr>
+      <tr><td>Gameplay statistics: levels played, results, booster use</td><td>to improve level balance and difficulty</td><td>AppMetrica (Yandex LLC)</td></tr>
+      <tr><td>Technical data: device model, OS version, language, anonymous install ID</td><td>statistics, finding bugs</td><td>AppMetrica (Yandex LLC)</td></tr>
+    </table>
+    <p>Your game progress is stored only on your device.</p>
+  </div>
 
-<h2>What we collect</h2>
-<p>The Game does <b>not</b> ask for your name, phone number, e-mail, location, contacts or photos.</p>
-<p>With your consent (shown on first launch), the following is collected automatically:</p>
-<table>
-  <tr><th>What</th><th>Why</th><th>Processor</th></tr>
-  <tr><td>Gameplay statistics: levels played, results, booster use</td><td>to improve level balance and difficulty</td><td>AppMetrica (Yandex LLC)</td></tr>
-  <tr><td>Technical data: device model, OS version, language, anonymous install ID</td><td>statistics, finding bugs</td><td>AppMetrica (Yandex LLC)</td></tr>
-</table>
-<p>Your game progress is stored only on your device.</p>
+  <div class="card">
+    <h2><i>💰</i>Ads and purchases</h2>
+    <p>The Game currently has no ads and no purchases. Future versions may show ads via Yandex Advertising Network (including ads personalized by the device advertising ID) and offer in-game purchases. Payment details are processed only by the app store; the Game never receives them. You can turn off ad personalization in your device settings. This page will be updated before ads or purchases are enabled.</p>
+  </div>
 
-<h2>Ads and purchases</h2>
-<p>Future versions of the Game may show ads via Yandex Advertising Network (including ads personalized by the device advertising ID) and offer in-game purchases. Payment details are processed only by the app store; the Game never receives them. You can turn off ad personalization in your device settings. This page will be updated before ads or purchases are enabled.</p>
+  <div class="card">
+    <h2><i>🔒</i>Sharing</h2>
+    <p>We do not sell or share data with third parties other than the processors listed above, who act under their own policies.</p>
+  </div>
 
-<h2>Sharing</h2>
-<p>We do not sell or share data with third parties other than the processors listed above, who act under their own policies.</p>
+  <div class="card">
+    <h2><i>🧸</i>Children</h2>
+    <p>The Game is not directed at children under 12 and does not knowingly collect their data.</p>
+  </div>
 
-<h2>Children</h2>
-<p>The Game is not directed at children under 12 and does not knowingly collect their data.</p>
+  <div class="card">
+    <h2><i>✅</i>Your rights</h2>
+    <p>You can withdraw consent and request deletion of your data by writing to <a href="mailto:awelave@yandex.ru">awelave@yandex.ru</a>. Uninstalling the Game deletes local progress.</p>
+  </div>
 
-<h2>Your rights</h2>
-<p>You can withdraw consent and request deletion of your data by writing to <a href="mailto:awelave@yandex.ru">awelave@yandex.ru</a>. Uninstalling the Game deletes local progress.</p>
-
-<h2>Changes</h2>
-<p>We may update this policy; the current version is always at this address.</p>
+  <div class="card">
+    <h2><i>📝</i>Changes</h2>
+    <p>We may update this policy; the current version is always at this address.</p>
+  </div>
 </section>
 
 </main>
+
+<footer>
+  <img src="../assets/icon.webp" alt="" width="56" height="56">
+  <span data-lang="ru">© Joseph Pasquale · Чудо-фабрика игрушек</span>
+  <span data-lang="en">© Joseph Pasquale · Wonder Toy Factory</span>
+</footer>
+
+<script>
+  // язык: #en / #ru в адресе (ссылка из игры), иначе язык браузера
+  function show(lang) {
+    document.querySelectorAll("[data-lang]").forEach(function (el) { el.classList.toggle("show", el.dataset.lang === lang); });
+    document.getElementById("tab-ru").classList.toggle("on", lang === "ru");
+    document.getElementById("tab-en").classList.toggle("on", lang === "en");
+    document.documentElement.lang = lang;
+  }
+  function pick() {
+    var h = location.hash.replace("#", "");
+    if (h === "ru" || h === "en") return h;
+    return /^(ru|uk|be)/i.test(navigator.language || "") ? "ru" : "en";
+  }
+  show(pick());
+  addEventListener("hashchange", function () { show(pick()); scrollTo(0, 0); });
+</script>
 </body>
 </html>
